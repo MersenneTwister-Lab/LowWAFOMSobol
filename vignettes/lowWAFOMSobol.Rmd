@@ -1,7 +1,7 @@
 ---
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Sobol sequences with better two-dimensional projections}
+  %\VignetteIndexEntry{Low WAFOM Sobol sequences}
   %\VignetteEngine{knitr::rmarkdown}
   \usepackage[utf8](inputenc)
 ---
@@ -18,7 +18,7 @@ Master's Thesis, 2017,
 and Ryuichi Ohori,
 "Efficient Quasi Monte Carlo Integration by Adjusting the
 Derivation-sensitivity Parameter of Walsh Figure of Merit",
-Master's Thesis, 2015.        
+Master's Thesis, 2015.
 
 Porting to R by Mutsuo Saito.
 The R version does not returns cordinate value zero,
@@ -51,7 +51,7 @@ Reference
 * S. Joe and F. Y. Kuo,
   "Constructing Sobol sequences with better two-dimensional projections",
   SIAM J. Sci. Comput. 30, 2635-2654 (2008).
-  
+
 Get avairable dimension number of Low WAFOM Sobol Sequence.
 ```{r}
 library(LowWAFOMSobol)
@@ -72,7 +72,7 @@ mat <- lowWAFOMSobol.points(dimR=s, dimF2=m, count=c)
 mat[1,]
 ```
 
-Get digital shifted points. 
+Get digital shifted points.
 ```{r}
 s <- 4
 m <- 10

@@ -6,8 +6,8 @@
 \alias{LowWAFOMSobol}
 \title{Low WAFOM Sobol Sequence}
 \description{
-Description: R implementation of Low Walsh Figure of Merit Sequence
-based on Sobol Sequence.
+Description: R implementation of Low Walsh Figure of Merit (WAFOM)
+Sequence based on Sobol Sequence.
 }
 \details{
 Porting to R by Mutsuo Saito.
