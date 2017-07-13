@@ -56,15 +56,6 @@ install_github('MersenneTwister-Lab/LowWAFOMSobol')
 * M. Matsumoto, M. Saito, and K. Matoba,
   "A computable figure of merit for quasi-Monte Carlo point sets",
   Mathematics of Computation, 83 (2014), pp. 1233-1250.
-* G. Pirsic,
-  "A software implementation of Niederreiter-Xing sequences",
-  in Monte Carlo and Quasi-Monte Carlo Methods 2000,
-  Springer, 2002, pp. 434-445.
-  https://sites.google.com/site/isabelpirsic/nxlegacy.
-* C. P. Xing and H. Niederreiter,
-  "A construction of low-discrepancy sequences using global
-  function fields",
-  ACTA ARITHMETICA, 73 (1995), pp. 87-102.
 * S. Joe and F. Y. Kuo,
   "Constructing Sobol sequences with better two-dimensional projections",
   SIAM J. Sci. Comput. 30, 2635-2654 (2008).
