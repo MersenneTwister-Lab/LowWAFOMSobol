@@ -49,7 +49,6 @@ by JST CREST.
 \examples{
 srange <- lowWAFOMSobol.dimMinMax()
 mrange <- lowWAFOMSobol.dimF2MinMax(srange[1])
-points <- lowWAFOMSobol.points(dimR=srange[1], dimF2=mrange[1], count=10000)
-points <- lowWAFOMSobol.points(dimR=srange[1], dimF2=mrange[1], count=10000,
-                            digitalShift=TRUE)
+points <- lowWAFOMSobol.points(dimR=srange[1], dimF2=mrange[1])
+points <- lowWAFOMSobol.points(dimR=srange[1], dimF2=mrange[1], digitalShift=TRUE)
 }

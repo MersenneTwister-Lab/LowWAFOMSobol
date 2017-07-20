@@ -14,9 +14,8 @@
 ##'@examples
 ##' srange <- lowWAFOMSobol.dimMinMax()
 ##' mrange <- lowWAFOMSobol.dimF2MinMax(srange[1])
-##' points <- lowWAFOMSobol.points(dimR=srange[1], dimF2=mrange[1], count=10000)
-##' points <- lowWAFOMSobol.points(dimR=srange[1], dimF2=mrange[1], count=10000,
-##'                             digitalShift=TRUE)
+##' points <- lowWAFOMSobol.points(dimR=srange[1], dimF2=mrange[1])
+##' points <- lowWAFOMSobol.points(dimR=srange[1], dimF2=mrange[1], digitalShift=TRUE)
 ##'@section Reference:
 ##' * Shinsuke Mori,
 ##'   "Suuchi Sekibun no tameno QMC Ten Shuugou no Sekkei, Tansaku,
@@ -89,20 +88,15 @@ lowWAFOMSobol.dimF2MinMax <- function(dimR) {
 ##' but returns value very near to zero, 2^-64.
 ##'@param dimR dimention.
 ##'@param dimF2 F2-dimention of each element.
-##'@param count number of points.
 ##'@param digitalShift use digital shift or not.
 ##'@return matrix of points where every row contains dimR dimensional point.
 ##'@export
 lowWAFOMSobol.points <- function(dimR,
                               dimF2 = 10,
-                              count,
                               digitalShift = FALSE) {
   smax = lowWAFOMSobol.dimMinMax()
   if (dimR < smax[1] || dimR > smax[2]) {
     stop(sprintf("dimR should be an integer %d <= dimR <= %d", smax[1], smax[2]))
-  }
-  if (missing(dimF2)) {
-    dimF2 = max(dimF2, ceiling(log2(count)))
   }
   mmax = lowWAFOMSobol.dimF2MinMax(dimR)
   if (dimF2 < mmax[1] || dimF2 > mmax[2]) {
@@ -123,5 +117,6 @@ lowWAFOMSobol.points <- function(dimR,
     sv <- numeric(1)
   }
   #  print(sv)
+  count <- 2^dimF2
   return(rcppLowWAFOMSobolPoints(df, dimR, dimF2, count, sv))
 }
