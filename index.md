@@ -5,8 +5,8 @@ Low WAFOM Sequences based on Sobol sequences
 are searched using an algorithm described in Shinsuke Mori's
 master thesis.
 
-##Caution
-Currently, this project is very experimental.
+##Information
+LowWAFOMSobol 1.0 is now available in CRAN.
 
 ##Link
 - [Japanese Version](index-ja.html)
@@ -15,20 +15,33 @@ Currently, this project is very experimental.
 - [This Page](https://mersennetwister-lab.github.io/LowWAFOMSobol/)
 
 ##Install
-You can install the packeage in R like this:
+You can install the release packeage from CRAN.
+
+### Install Develop version
+
+- Windows Users need [Rtools](https://cran.r-project.org/bin/windows/Rtools/).
+- Mac users need Xcode.
+
+And then,
 
 ```
 install.packages('devtools')
 library('devtools')
-install_github("MersenneTwister-Lab/LowWAFOMSobol")
+install_github("MersenneTwister-Lab/LowWAFOMSobol", ref='develop')
 ```
 
-##Recovery
-If fail, try old good style, download and install.
+##Download
 
+### Release Version:
 - Source Package: [LowWAFOMSobol_1.0.tar.gz](LowWAFOMSobol_1.0.tar.gz)
 - OS X Binary Package: [LowWAFOMSobol_1.0.tgz](LowWAFOMSobol_1.0.tgz)
 - Windows Binary Package: [LowWAFOMSobol_1.0.zip](LowWAFOMSobol_1.0.zip)
+
+### Develop Version:
+- Source Package: [LowWAFOMSobol_1.0.1.tar.gz](LowWAFOMSobol_1.0.1.tar.gz)
+- OS X Binary Package: [LowWAFOMSobol_1.0.1.tgz](LowWAFOMSobol_1.0.1.tgz)
+- Windows Binary Package: [LowWAFOMSobol_1.0.1.zip](LowWAFOMSobol_1.0.1.zip)
+- [vignettes](v1_0_1/lowWAFOMSobol.html)
 
 ##Reference
 * Shinsuke Mori,
@@ -43,6 +56,10 @@ If fail, try old good style, download and install.
   "A search for extensible low-WAFOM point sets",
   arXiv preprint, arXiv:1309.7828, (2013),
   https://arxiv.org/abs/1309.7828.
+* Harase, S. (2016).
+  "A search for extensible low-WAFOM point sets",
+  Monte Carlo Methods and Applications, 22(4), pp. 349-357, 2017.
+  [doi:10.1515/mcma-2016-0119](doi:10.1515/mcma-2016-0119)
 * M. Matsumoto and R. Ohori,
   "Walsh Figure of Merit for Digital Nets: An Easy Measure
   for Higher Order Convergent QMC",

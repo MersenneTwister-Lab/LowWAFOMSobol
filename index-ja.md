@@ -5,8 +5,8 @@ R package: Sobol sequence に基づくLow WAFOM Sequence
 述べられた方法で探索された「Sobol sequence に基づくLow WAFOM Sequence」を
 Rに移植したもの。
 
-##注意
-いまのところ、このプロジェクトはまったく実験的なものです。
+##お知らせ
+このパッケージはCRANに登録されました。
 
 ##リンク
 
@@ -16,6 +16,9 @@ Rに移植したもの。
 - [このページ](https://mersennetwister-lab.github.io/LowWAFOMSobol/)
 
 ##インストール
+リリース版はCRANからインストールできます。
+
+### 開発版のインストール
 まず、
 
 - Windows利用者は[Rtools](https://cran.r-project.org/bin/windows/Rtools/)を
@@ -27,15 +30,23 @@ Rに移植したもの。
 ```
 install.packages('devtools')
 library('devtools')
-install_github('MersenneTwister-Lab/LowWAFOMSobol')
+install_github('MersenneTwister-Lab/LowWAFOMSobol', ref='develop')
 ```
 
-##やり直し
-上記の方法でうまくいかないときは、ダウンロードしてインストールする方法を試してください。
+
+##ダウンロード
+###リリース版
 
 - Source Package: [LowWAFOMSobol_1.0.tar.gz](LowWAFOMSobol_1.0.tar.gz)
 - OS X Binary Package: [LowWAFOMSobol_1.0.tgz](LowWAFOMSobol_1.0.tgz)
 - Windows Binary Package: [LowWAFOMSobol_1.0.zip](LowWAFOMSobol_1.0.zip)
+
+###開発版
+
+- Source Package: [LowWAFOMSobol_1.0.1.tar.gz](LowWAFOMSobol_1.0.1.tar.gz)
+- OS X Binary Package: [LowWAFOMSobol_1.0.1.tgz](LowWAFOMSobol_1.0.1.tgz)
+- Windows Binary Package: [LowWAFOMSobol_1.0.1.zip](LowWAFOMSobol_1.0.1.zip)
+- [vignettes](v1_0_1/lowWAFOMSobol-ja.html)
 
 ##参照
 * 森 信輔,
@@ -49,6 +60,10 @@ install_github('MersenneTwister-Lab/LowWAFOMSobol')
   "A search for extensible low-WAFOM point sets",
   arXiv preprint, arXiv:1309.7828, (2013),
   https://arxiv.org/abs/1309.7828.
+* Harase, S. (2016).
+  "A search for extensible low-WAFOM point sets",
+  Monte Carlo Methods and Applications, 22(4), pp. 349-357, 2017.
+  [doi:10.1515/mcma-2016-0119](doi:10.1515/mcma-2016-0119)
 * M. Matsumoto and R. Ohori,
   "Walsh Figure of Merit for Digital Nets: An Easy Measure
   for Higher Order Convergent QMC",
