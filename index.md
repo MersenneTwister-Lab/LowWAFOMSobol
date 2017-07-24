@@ -6,7 +6,8 @@ are searched using an algorithm described in Shinsuke Mori's
 master thesis.
 
 ##Information
-LowWAFOMSobol 1.0 is now available in CRAN.
+- version 1.0 on CRAN has bugs, please use version 1.1 or later.
+- LowWAFOMSobol 1.0 is now available in CRAN.
 
 ##Link
 - [Japanese Version](index-ja.html)
@@ -38,9 +39,9 @@ install_github("MersenneTwister-Lab/LowWAFOMSobol", ref='develop')
 - Windows Binary Package: [LowWAFOMSobol_1.0.zip](LowWAFOMSobol_1.0.zip)
 
 ### Develop Version:
-- Source Package: [LowWAFOMSobol_1.0.1.tar.gz](LowWAFOMSobol_1.0.1.tar.gz)
-- OS X Binary Package: [LowWAFOMSobol_1.0.1.tgz](LowWAFOMSobol_1.0.1.tgz)
-- Windows Binary Package: [LowWAFOMSobol_1.0.1.zip](LowWAFOMSobol_1.0.1.zip)
+- Source Package: [LowWAFOMSobol_1.1.0.tar.gz](LowWAFOMSobol_1.1.0.tar.gz)
+- OS X Binary Package: [LowWAFOMSobol_1.1.0.tgz](LowWAFOMSobol_1.1.0.tgz)
+- Windows Binary Package: [LowWAFOMSobol_1.1.0.zip](LowWAFOMSobol_1.1.0.zip)
 - [vignettes](v1_0_1/lowWAFOMSobol.html)
 
 ##Reference
