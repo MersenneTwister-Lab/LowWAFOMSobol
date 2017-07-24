@@ -22,6 +22,9 @@ test_that("test Low WAFOM Sobol Sequence points", {
   expect_equal(ncol(matrix), s)
   expect_true(all(matrix < 1))
   expect_true(all(matrix > 0))
+  r2 <- c(0.674217, 0.522469, 0.777076, 0.645491)
+  expect_equal(matrix[2,], r2, tolerance=0.000001)
+  
 })
 
 test_that("test Low WAFOM Sobol Sequence points digitalShift", {
