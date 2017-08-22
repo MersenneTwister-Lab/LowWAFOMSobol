@@ -39,9 +39,9 @@ install_github("MersenneTwister-Lab/LowWAFOMSobol", ref='develop')
 - Windows Binary Package: [LowWAFOMSobol_1.0.zip](LowWAFOMSobol_1.0.zip)
 
 ### Develop Version:
-- Source Package: [LowWAFOMSobol_1.1.0.tar.gz](LowWAFOMSobol_1.1.0.tar.gz)
-- OS X Binary Package: [LowWAFOMSobol_1.1.0.tgz](LowWAFOMSobol_1.1.0.tgz)
-- Windows Binary Package: [LowWAFOMSobol_1.1.0.zip](LowWAFOMSobol_1.1.0.zip)
+- Source Package: [LowWAFOMSobol_1.1.1.tar.gz](LowWAFOMSobol_1.1.1.tar.gz)
+- OS X Binary Package: [LowWAFOMSobol_1.1.1.tgz](LowWAFOMSobol_1.1.1.tgz)
+- Windows Binary Package: [LowWAFOMSobol_1.1.1.zip](LowWAFOMSobol_1.1.1.zip)
 - [vignettes](v1_0_1/lowWAFOMSobol.html)
 
 ##Reference
